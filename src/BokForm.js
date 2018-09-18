@@ -8,7 +8,7 @@ let BokForm = (props) => {
         } } >
     <input type="text" value={props.newBok} onChange={
         (event) => {
-            console.log(event.target.value);
+            //console.log(event.target.value);
             props.updateBokForm(event.target.value);
         }
     }/>

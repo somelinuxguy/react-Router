@@ -18,28 +18,26 @@ let NotFound = () =>
 
 // need to pull out just the one bok
 let BokPage = (props) => {
-    //return doer ? doer(oldStore, action) : oldStore;
     let foundBok = props.boks.find(bok => bok.id.toString() === props.match.params.id)
-    console.log(foundBok, props.match);
     return foundBok ? <p>{foundBok.content}</p> : <p>Loading...</p>
 }
 
 // I have no idea what ... is
 let Router = (props) => 
-<HashRouter>
-    <div>
-        <Navbar/>
-        <Switch>
-            <Route exact path="/boks" render={(routeProps) => 
-                <Homepage {...routeProps} {...props} /> }
-            />
-            <Route exact path="/boks/:id" render={(routeProps) =>
-                <BokPage {...routeProps} {...props} /> }
-            />
-            <Route path="/profile" component={profile} />
-            <Route path="/" component={NotFound} />
-        </Switch>
-    </div>
-</HashRouter>
+    <HashRouter>
+        <div>
+            <Navbar/>
+            <Switch>
+                <Route exact path="/boks" render={(routeProps) => 
+                    <Homepage {...routeProps} {...props} /> }
+                />
+                <Route exact path="/boks/:id" render={(routeProps) =>
+                    <BokPage {...routeProps} {...props} /> }
+                />
+                <Route path="/profile" component={profile} />
+                <Route path="/" component={NotFound} />
+            </Switch>
+        </div>
+    </HashRouter>
 
 export default Router;
