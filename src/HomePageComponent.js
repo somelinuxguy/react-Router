@@ -1,3 +1,32 @@
+// const boks =
+//  [
+//     {
+//       "userId": 5,
+//       "id": 4,
+//       "user": "The Fly-Hard Navy",
+//       "content": "🦆 🐰 🦆 🐰 🦆 🐰 😵"
+//     },
+//     {
+//       "userId": 1,
+//       "id": 1,
+//       "user": "BDFL",
+//       "content": "There are cookies in the kitchen. 🍪 No, really! @dan!"
+//     },
+//     {
+//       "userId": 3,
+//       "id": 2,
+//       "user": "Watman",
+//       "content": "Sooo I discovered the 🕵️ 1984 Sherlock Holmes TV series."
+//     },
+//     {
+//       "userId": 5,
+//       "id": 3,
+//       "user": "Master Commander Duck",
+//       "content": "Those pop tarts are a lie. 🤫"
+//     }
+//   ]
+
+
 import React from 'react';
 import Router from './Router.js';
 import genID from './genID.js';
